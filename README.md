@@ -6,6 +6,8 @@ This is a simple lab. All you have to do is get the tests passing. There are a b
 
 The model name will be `Post` and the attributes will be `title` and `description`. The `title` attribute should be of type `string` and `description` should be of type `text`.
 
+rails g scaffold Post title:string description:text --no-test-framework
+
 ## What are all these files?
 
 All the files that you currently see in your project directory, with the exception of a few `spec` files, were generated via the `rails new` command. Consequently, it built a fully fledged web app ready out of the box. This is an example of why the Rails framework is called an opinionated framework that favors convention over configuration. With Sinatra, we can build an app from scratch by just adding `require  'sinatra'` in a file and calling `rackup`. Rails is much heavier than that. With an app ready out of the box through generators like `rails new` and `rails generate scaffold`, we're able to build larger scale applications very quickly.
